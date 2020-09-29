@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">CSS Rules</h1>
+      <p class="info">This page is designed to explain CSS rules and their functions, and to give some examples of how they are used with HTML pages.</p>
+      <hr>
+    </header>
+
+    <main>
+      <section class="selectors">
+        <p>First, we will look at CSS Selectors. Each selector will target different HTML elements, so it is important to know when it is appropriate to use each one.</p>
+        <table class="center">
+          <caption>CSS Selectors and their purpose</caption>
+          <thead>
+            <tr>
+              <th>CSS Selector</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td><span class="code">p</span></td>
+            <td>Element Selector</td>
+            <td>This will style all p elements in the web page</td>
+            </tr>
+            <tr>
+              <td><span class="code">.main</span></td>
+              <td>Class Selector</td>
+              <td>This will style all elements with the "main" class</td>
+            </tr>
+            <tr>
+              <td><span class="code">#title</span></td>
+              <td>ID Selector</td>
+              <td>This will style the element with the ID "title"</td>
+            </tr>
+            <tr>
+              <td><span class="code">p .main</span></td>
+              <td>Element <em>with</em> Class</td>
+              <td>This selector will target all p elements with the class "main"</td>
+            </tr>
+            <tr>
+              <td><span class="code">.main p</span></td>
+              <td>Element <em>under</em> Class</td>
+              <td>This will target any p elements that are nested within an element that has the "main" class</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="specificity">
+        <p><strong>Specificity</strong> is an important feature to know when using CSS selectors. It refers to which selectors have priority over others, so that if more than one style could apply to a particular element, the browser will know which one to use.</p>
+        <p>The general rule is that ID selectors are more important than class selectors, which in turn are more important than element selectors. Styling done directly in the HTML code, such as using the <span class="code">&lt;style&gt;</span> tag or inline styles, will override most CSS rules. Using <span class="code">!important</span> when defining a style will override any other styling, however, so this takes the #1 spot! </p>
+      </section>
+
+      <section class="properties">
+        <p>Now that we understand selectors and specificity, let's have a look at the properties we can assign styles with!</p>
+        <table class="center">
+          <caption>CSS Properties and Values</caption>
+          <thead>
+            <th>Property</th>
+            <th>Values</th>
+            <th>Description</th>
+          </thead>  
+          <tbody>
+            <tr>
+              <td><span class="code">color</span></td>
+              <td><span class="code">Maroon</span>, <span class="code">Azure</span></td>
+              <td>Changes the colour of the element targetted &mdash; CSS has 140 supported colour names</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-family</span></td>
+              <td><span class="code">Georgia</span>, <span class="code">Arial</span></td>
+              <td>Changes the typeface</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-size</span></td>
+              <td><span class="code">12px</span></td>
+              <td>Changes the font size &mdash; this example uses pixels, but relative units are also used</td>
+            </tr>
+            <tr>
+              <td><span class="code">font-weight</span></td>
+              <td><span class="code">bold</span></td>
+              <td>Changes the thickness of the letters &mdash; it is possible to use numerical values as well as <span class="code">bold</span> or <span class="code">normal</span></td>
+            </tr>
+            <tr>
+              <td><span class="code">text-align</span></td>
+              <td><span class="code">center</span></td>
+              <td>Aligns the text either left, right, centered or justified</td>
+            </tr>
+            <tr>
+              <td><span class="code">opacity</span></td>
+              <td><span class="code">0</span> to <span class="code">1</span></td>
+              <td>Changes the opacity of the text from <span class="code">1</span> - fully opaque - to <span class="code">0</span> - fully transparent</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>These are just a few examples of CSS properties that can be used to style a webpage. Take a look at <a href="https://www.w3schools.com/css/default.asp" target="blank" class="external-link">this website</a> for more!</p>
+
+      </section>
+
+    </main>
+    <hr>
+    <footer>
+      <h6>Created by Luci Galer on 29/09/2020</h6>
+    </footer>
+  </body>
+</html>
